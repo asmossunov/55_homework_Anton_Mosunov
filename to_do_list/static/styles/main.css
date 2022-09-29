@@ -77,9 +77,18 @@
     color: grey;
 }
 
+.row-form-errors{
+    font-family: Arial;
+    color: red;
+}
+
 .descript{
     margin-top: 57px;
     font-size: 30px;
+    color: #6ea9b9;
+}
+.form-label{
+    font-size: 18px;
     color: #6ea9b9;
 }
 

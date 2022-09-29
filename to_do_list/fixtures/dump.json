@@ -1,62 +1,1398 @@
 [
 {
-  "model": "to_do.task",
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2022-09-19T05:32:42.628Z",
+    "user": 2,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "y",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.856Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "26",
+    "object_repr": "Купить билеты на концерт in_process 2022-09-29 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.863Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "25",
+    "object_repr": "Купить билеты на концерт in_process 2022-09-24 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.866Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "24",
+    "object_repr": "Купить билеты в цирк in_process 2022-09-24 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.870Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "23",
+    "object_repr": "Купить билеты на концерт done 2022-10-05 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.874Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "22",
+    "object_repr": "Купить билеты на концерт in_process 2022-09-29 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.877Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "21",
+    "object_repr": "Купить билеты на концерт in_process 2022-09-29 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.881Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "20",
+    "object_repr": "Купить билеты на концерт in_process 2022-09-29 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.884Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "19",
+    "object_repr": "Купить билеты на концерт in_process 2022-09-29 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.888Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "18",
+    "object_repr": "Купить билеты на самолет В процессе 2022-09-29 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.892Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "17",
+    "object_repr": "Купить билеты на самолет В процессе 2022-09-29 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.896Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "16",
+    "object_repr": "Купить билеты на концерт in 2022-10-05 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.899Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "15",
+    "object_repr": "Купить билеты на концерт in_process 2022-10-05 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.903Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "Купить билеты на самолет in_process 2022-10-05 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.906Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "13",
+    "object_repr": "Купить билеты на самолет in_process 2022-10-05 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.910Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "12",
+    "object_repr": "Купить билеты на концерт done 2022-10-05 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.914Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "11",
+    "object_repr": "Купить билеты на концерт done 2022-10-05 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.918Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "10",
+    "object_repr": "Купить билеты на самолет in 2022-09-29 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.921Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "Купить билеты в цирк in process 2022-09-29 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.925Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "Купить билеты на концерт new 2022-10-05 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.928Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "Купить билеты в цирк new 2022-09-24 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2022-09-20T03:32:32.932Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Купить билеты на самолет new 2022-09-24 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2022-09-20T05:13:23.603Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Купить билеты на самолёт new 2022-09-29",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2022-09-20T05:19:26.700Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "fdfhfghfdhdfhdfh new 2022-09-29",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2022-09-20T05:21:11.515Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "ljgkjh new 2022-09-29",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2022-09-20T05:22:08.514Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "fg new 2022-09-29",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2022-09-20T05:24:24.983Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "aDf new 2022-09-29",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2022-09-20T05:25:40.564Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "fasfdasfdsa new 2022-09-20 05:25:38+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2022-09-20T05:26:59.417Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "dzfv new 2022-09-29",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2022-09-20T05:27:41.874Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "asfd new 2022-09-20",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2022-09-20T05:37:46.806Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "виапиваип new 2022-09-29",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2022-09-20T05:40:39.643Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "вяымчамчс new 2022-09-29",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2022-09-20T05:41:36.498Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "ваывыаываыв new 2022-09-17",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2022-09-20T05:43:22.114Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "авяапвапа new 2022-09-29",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
   "pk": 35,
   "fields": {
-    "task_text": "Купить билеты на самолет",
-    "task_description": "У лукоморья дуб зеленый\r\nЗлатая цепь на дубе том\r\nИ днём и ночью кот учёный\r\nВсё ходит по цепи кругом",
-    "state": "new",
-    "deadline": "2022-09-24T00:00:00Z"
+    "action_time": "2022-09-20T05:44:17.207Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "папиач new 2022-09-29",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "to_do.task",
+  "model": "admin.logentry",
   "pk": 36,
   "fields": {
-    "task_text": "Подготовить отчет о работе",
-    "task_description": "У лукоморья дуб зеленый\r\nЗлатая цепь на дубе том\r\nИ днём и ночью кот учёный\r\nВсё ходит по цепи кругом",
-    "state": "in_process",
-    "deadline": "2022-09-25T00:00:00Z"
+    "action_time": "2022-09-20T05:45:52.380Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "чичавпиав new 2022-09-29",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "to_do.task",
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2022-09-20T06:02:32.601Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "dfdfgdfg new 2022-09-29",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
   "pk": 38,
   "fields": {
-    "task_text": "Купить билеты на концерт",
-    "task_description": "У лукоморья дуб зеленый\r\nЗлатая цепь на дубе том\r\nИ днём и ночью кот учёный\r\nВсё ходит по цепи кругом",
-    "state": "done",
-    "deadline": "2022-09-23T00:00:00Z"
+    "action_time": "2022-09-20T06:03:28.955Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "fdgdsfgdsfg new 2022-09-20",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
   }
 },
 {
-  "model": "to_do.task",
+  "model": "admin.logentry",
   "pk": 39,
   "fields": {
-    "task_text": "Оформить ребенка в детсад",
-    "task_description": "У лукоморья дуб зеленый\r\nЗлатая цепь на дубе том\r\nИ днём и ночью кот учёный\r\nВсё ходит по цепи кругом",
-    "state": "new",
-    "deadline": "2022-10-02T00:00:00Z"
+    "action_time": "2022-09-20T06:09:21.741Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Купить билеты на концерт in_process None",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "to_do.task",
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2022-09-20T06:09:21.748Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Купить билеты на концерт new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2022-09-20T06:09:21.752Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Купить билеты на концерт new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
   "pk": 42,
   "fields": {
-    "task_text": "Купить билеты на самолет",
-    "task_description": "iuyoiuyoiu\r\ndfgxbx\r\nxcvbxcvbxcvb\r\nxcvbcxvbxcvb",
-    "state": "in_process",
-    "deadline": "2022-10-02T00:00:00Z"
+    "action_time": "2022-09-20T06:09:21.757Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "fdgdsfgdsfg new None",
+    "action_flag": 3,
+    "change_message": ""
   }
 },
 {
-  "model": "to_do.task",
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2022-09-20T06:12:17.652Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Купить билеты на самолет in_process None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2022-09-20T06:12:17.656Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Купить билеты на самолет in_process None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2022-09-20T06:24:41.925Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "sfddgdsfgdfg new 2022-09-20 06:24:39+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2022-09-20T06:24:57.855Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "sfddgdsfgdfg new 2022-09-20 06:24:39+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2022-09-20T06:24:57.862Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Купить билеты на концерт new 2022-10-05 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2022-09-20T06:24:57.865Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Купить билеты на концерт new 2022-09-29 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2022-09-20T06:42:29.931Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Купить билеты на концерт new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2022-09-20T06:42:29.937Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Купить билеты на концерт new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2022-09-20T06:42:29.941Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Купить билеты на концерт new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2022-09-20T06:42:29.945Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Купить билеты на концерт in_process None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
   "pk": 53,
   "fields": {
-    "task_text": "Купить билеты на концерт",
-    "task_description": "vhmvmvnvb",
-    "state": "in_process",
-    "deadline": "2022-09-16T00:00:00Z"
+    "action_time": "2022-09-20T07:00:45.135Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "zfvdfvdfv new 2022-09-20",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2022-09-20T07:00:55.216Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "zfvdfvdfv new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2022-09-20T07:00:55.222Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Купить билеты на концерт in_process None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2022-09-20T07:00:55.227Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Купить билеты на концерт in_process None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2022-09-22T07:10:51.500Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "49",
+    "object_repr": " new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2022-09-22T07:20:57.941Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "50",
+    "object_repr": " new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2022-09-22T07:20:57.947Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "40",
+    "object_repr": "Забрать посылку на почте new 2022-09-25 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2022-09-22T07:20:57.950Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "39",
+    "object_repr": "Оформить ребенка в детсад new 2022-10-02 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2022-09-22T07:20:57.954Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "38",
+    "object_repr": "Купить билеты на концерт done 2022-09-23 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2022-09-22T07:20:57.958Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "36",
+    "object_repr": "Подготовить отчет о работе in_process 2022-09-25 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2022-09-22T07:20:57.961Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "35",
+    "object_repr": "Купить билеты на самолет new 2022-09-24 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2022-09-22T07:31:56.162Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "40",
+    "object_repr": "Забрать посылку на почте new 2022-09-25 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2022-09-22T07:31:56.169Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "39",
+    "object_repr": "Оформить ребенка в детсад new 2022-10-02 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2022-09-22T07:31:56.175Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "38",
+    "object_repr": "Купить билеты на концерт done 2022-09-23 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2022-09-22T07:31:56.179Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "36",
+    "object_repr": "Подготовить отчет о работе in_process 2022-09-25 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2022-09-22T07:31:56.183Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "35",
+    "object_repr": "Купить билеты на самолет new 2022-09-24 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2022-09-22T08:24:03.960Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "35",
+    "object_repr": "Купить билеты на самолет new 2022-09-24 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2022-09-22T10:39:16.865Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "35",
+    "object_repr": "Купить билеты на самолет new 2022-09-24 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2022-09-22T11:26:16.249Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "42",
+    "object_repr": " in_process 2022-09-30 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2022-09-22T11:26:16.255Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "41",
+    "object_repr": " new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2022-09-22T11:26:16.259Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "40",
+    "object_repr": "Забрать посылку на почте new 2022-09-25 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2022-09-22T11:26:16.263Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "39",
+    "object_repr": "Оформить ребенка в детсад new 2022-10-02 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2022-09-22T11:26:16.267Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "38",
+    "object_repr": "Купить билеты на концерт done 2022-09-23 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2022-09-22T11:26:16.270Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "36",
+    "object_repr": "Подготовить отчет о работе in_process 2022-09-25 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2022-09-22T11:26:16.274Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "35",
+    "object_repr": "Купить билеты на самолет new 2022-09-24 00:00:00+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2022-09-22T11:32:33.086Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "44",
+    "object_repr": " new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2022-09-22T11:32:33.092Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "43",
+    "object_repr": " new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2022-09-22T11:54:37.853Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "тема не определена in_process None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2022-09-22T11:54:37.859Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": " in_process None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2022-09-22T11:54:37.862Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": " in_process None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2022-09-22T11:54:37.866Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": " new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2022-09-22T11:54:37.870Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": " new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2022-09-22T11:54:37.874Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": " new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2022-09-22T11:54:37.878Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": " new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2022-09-22T11:54:37.882Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": " new None",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2022-09-29T18:05:30.211Z",
+    "user": 2,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Купить билеты на концерт New 2022-09-29 18:05:22+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add task",
+    "content_type": 7,
+    "codename": "add_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change task",
+    "content_type": 7,
+    "codename": "change_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete task",
+    "content_type": 7,
+    "codename": "delete_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view task",
+    "content_type": 7,
+    "codename": "view_task"
   }
 },
 {
@@ -64,7 +1400,7 @@
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$260000$UmUBlhew1Jc234thIPQqpE$4iTng0c7nF8rSioIgNg5JYPbRLdGU0MiFhxOt38PW7g=",
-    "last_login": "2022-09-19T05:29:57.869Z",
+    "last_login": "2022-09-29T18:05:03.021Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
@@ -93,6 +1429,134 @@
     "date_joined": "2022-09-20T08:09:04.673Z",
     "groups": [],
     "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "to_do",
+    "model": "task"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "cckcmo0ezcvspw8x8i6b9kcxliz0sp9t",
+  "fields": {
+    "session_data": ".eJxVjEsOAiEQBe_C2pCm-cale89AaD4yaiAZZlbGuyvJLHT5XlXqxXzYt-r3kVe_JHZmyE6_H4X4yG2CdA_t1nnsbVsX4lPhBx382lN-Xg73L1DDqDMryBhA0JSKKC4LobE4lAgUioDopDKSrJIKbAD8bh0FJESwZAgle38AuEY2fA:1odxuB:oZrzHSMcZKlDNt7rZvjYJOKnwfqIPt5LJpdT8YKISJw",
+    "expire_date": "2022-10-13T18:05:03.028Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "iunkndf9ph3icr64k57la4cyxllkl5qv",
+  "fields": {
+    "session_data": ".eJxVjEsOAiEQBe_C2pCm-cale89AaD4yaiAZZlbGuyvJLHT5XlXqxXzYt-r3kVe_JHZmyE6_H4X4yG2CdA_t1nnsbVsX4lPhBx382lN-Xg73L1DDqDMryBhA0JSKKC4LobE4lAgUioDopDKSrJIKbAD8bh0FJESwZAgle38AuEY2fA:1obGM2:3LW3EWbh4S_reUo_d5mFYk8C0QOAXWP04yolS_aSL9g",
+    "expire_date": "2022-10-06T07:10:38.214Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "q4q3mydqulwvtksncwxc35ljybv6dlpp",
+  "fields": {
+    "session_data": ".eJxVjEsOAiEQBe_C2pCm-cale89AaD4yaiAZZlbGuyvJLHT5XlXqxXzYt-r3kVe_JHZmyE6_H4X4yG2CdA_t1nnsbVsX4lPhBx382lN-Xg73L1DDqDMryBhA0JSKKC4LobE4lAgUioDopDKSrJIKbAD8bh0FJESwZAgle38AuEY2fA:1oa9Lx:M4KWxHqKml1fvWvq6yaUDmqYnB6W6RPwtgYG7luNFsE",
+    "expire_date": "2022-10-03T05:29:57.873Z"
+  }
+},
+{
+  "model": "to_do.task",
+  "pk": 3,
+  "fields": {
+    "task_text": "Купить билеты на концерт",
+    "task_description": "\"У лукоморья дуб зеленый\r\nЗлатая цепь на дубе том\r\nИ днём и ночью кот учёный\r\nВсё ходит по цепи кругом\",",
+    "state": "new",
+    "deadline": "2024-11-14T00:00:00Z",
+    "created_at": "2022-09-29T18:29:13.149Z",
+    "changed_at": "2022-09-29T18:29:13.149Z"
+  }
+},
+{
+  "model": "to_do.task",
+  "pk": 4,
+  "fields": {
+    "task_text": "Купить билеты на самолет",
+    "task_description": "\"У лукоморья дуб зеленый\r\nЗлатая цепь на дубе том\r\nИ днём и ночью кот учёный\r\nВсё ходит по цепи кругом\",",
+    "state": "in_process",
+    "deadline": "2022-10-08T00:00:00Z",
+    "created_at": "2022-09-29T18:30:02.768Z",
+    "changed_at": "2022-09-29T18:30:02.768Z"
+  }
+},
+{
+  "model": "to_do.task",
+  "pk": 5,
+  "fields": {
+    "task_text": "Подготовить отчет о работе",
+    "task_description": "\"У лукоморья дуб зеленый\r\nЗлатая цепь на дубе том\r\nИ днём и ночью кот учёный\r\nВсё ходит по цепи кругом\",",
+    "state": "done",
+    "deadline": "2022-11-14T00:00:00Z",
+    "created_at": "2022-09-29T18:30:26.668Z",
+    "changed_at": "2022-09-29T18:30:26.668Z"
+  }
+},
+{
+  "model": "to_do.task",
+  "pk": 6,
+  "fields": {
+    "task_text": "Купить билеты в цирк",
+    "task_description": "\"У лукоморья дуб зеленый\r\nЗлатая цепь на дубе том\r\nИ днём и ночью кот учёный\r\nВсё ходит по цепи кругом\",",
+    "state": "in_process",
+    "deadline": "2022-11-25T00:00:00Z",
+    "created_at": "2022-09-29T18:30:51.021Z",
+    "changed_at": "2022-09-29T18:30:51.021Z"
   }
 }
 ]

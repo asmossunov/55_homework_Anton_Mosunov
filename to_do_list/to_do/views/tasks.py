@@ -4,7 +4,6 @@ from django.urls import reverse
 
 from to_do.models import Task
 from to_do.choice_config import CHOICES
-from to_do.forms import TaskForm
 
 
 def index_view(request):
@@ -17,18 +16,31 @@ def index_view(request):
         return render(request, 'index.html', context)
 
 def add_task_view(request):
-    form = TaskForm()
     if request.method == 'GET':
-        context = {'form': form}
-        return render(request, 'add_task.html', context)
-    form = TaskForm(request.POST)
-    if not form.is_valid():
         context = {
-            'form': form
+            'CHOICES': CHOICES
         }
         return render(request, 'add_task.html', context)
-    task = Task.objects.create(**form.cleaned_data)
-    return redirect('task_detail', pk=task.pk)
+    return added_task_prepare(request)
+
+def added_task_prepare(request):
+    if request.POST.get("task_text") == '':
+        task_text = 'тема не определена'
+    else:
+        task_text = request.POST.get("task_text")
+    if request.POST.get("deadline") == '':
+        deadline = None
+    else:
+        deadline = request.POST.get("deadline")
+    task = Task.objects.create(
+        task_text=task_text,
+        task_description=request.POST.get("task_description"),
+        state=request.POST.get("state"),
+        deadline=deadline
+    )
+    print(f'Добавлена запись: {task}')
+    return redirect(reverse('task_detail', kwargs={'pk': task.pk}) )
+
 
 def task_view(request, pk):
     if request.POST.get("task_text") == '':
@@ -54,27 +66,17 @@ def task_view(request, pk):
     return render(request, 'task.html', context={'task': task, 'CHOICES': CHOICES})
 
 def task_edit_view(request, pk):
-    task = get_object_or_404(Task, pk=pk)
-    if request.method == 'GET':
-        form = TaskForm(initial={
-            'task_text': task.task_text,
-            'state': task.state,
-            'task_description': task.task_description,
-            'deadline': task.deadline
-        })
-        return render(request, 'edit_task.html', context={'form': form, 'task': task})
-    form = TaskForm(request.POST)
-    if not form.is_valid():
-        context = {
-            'choices': CHOICES,
-            'form': form
+    task = Task.objects.get(pk=pk)
+    context = {
+            'CHOICES': CHOICES,
+            'task': task,
         }
-        return render(request, 'add_task.html', context)
-    task = Task.objects.create(**form.cleaned_data)
+    return render(request, 'edit_task.html', context)
 
 
 def delete_view(request, pk):
     task = get_object_or_404(Task, pk=pk)
+    print(pk)
     context = {
         'task': task
     }

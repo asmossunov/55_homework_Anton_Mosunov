@@ -73,8 +73,16 @@ def task_edit_view(request, pk):
         }
     return render(request, 'edit_task.html', context)
 
-def confirmation_view(request, pk):
-    task = Task.objects.get(pk=pk)
+
+def delete_view(request, pk):
+    task = get_object_or_404(Task, pk=pk)
+    print(pk)
+    context = {
+        'task': task
+    }
+    return render(request, 'task_confirm_delete.html', context)
+
+def confirm_delete(request, pk):
+    task = get_object_or_404(Task, pk=pk)
     task.delete()
-    print(f'Удалена запись ID {pk}')
-    return render(request, 'confirmation.html', context={'task': task})
+    return redirect('index')

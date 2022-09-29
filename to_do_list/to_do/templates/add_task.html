@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block menu %}
+
+{% endblock %}
+
+{% block title %}
+    Создание задачи
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="box">
+
+            <div class="head_text heading text-center">
+                <p class="main-title-home">TO DO ADD</p>
+                <p class="about-game">страница добавления задачи</p>
+            </div>
+
+           <form action="{% url 'task_add' %}" method="POST">
+                {% csrf_token%}
+
+                <div class="row text justify-content-center">
+                    <div class="col-5 text-center">
+                        <input name="task_text" class="form-control id="task_text" placeholder="тема новой задачи">
+                        <p class="descript">дедлайн</p>
+                            <input name="deadline" type="date" class="form-control id="deadline" placeholder="срок выполнения">
+                    </div>
+
+
+                    <div class="col-5 text-center">
+                        <textarea class="form-control" name="task_description" id="exampleFormControlTextarea1" rows="5" placeholder="описание"></textarea>
+                    </div>
+
+
+                       <div class="row text justify-content-center">
+                            <div class="col-4 text-center pt-10">
+                                <p class="descript">состояние задачи</p>
+                            </div>
+                       </div>
+                        <div class="row text justify-content-center">
+                       {% for choice in CHOICES %}
+                            {% if choice.0 == "new" %}
+                               <div class="col-2">
+                                   <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="state" value={{choice.0}} id="state" checked>
+                                      <label class="form-check-label" for="state">{{choice.1}}</label>
+                                   </div>
+                               </div>
+                            {% else %}
+                                <div class="col-2">
+                                   <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="state" value={{choice.0}} id="state">
+                                      <label class="form-check-label" for="state">{{choice.1}}</label>
+                                   </div>
+                               </div>
+                            {% endif %}
+                       {% endfor %}
+                        </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-10 text-center">
+                        <button type="submit" class="btn btn-secondary btn-block">Создать</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

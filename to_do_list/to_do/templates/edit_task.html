@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block menu %}
+    <li>
+        <a href="{% url 'task_add' %}">Создать задачу</a>
+    </li>
+{% endblock %}
+
+{% block title %}
+    Редактирование задачи
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="box">
+            <div class="head_text heading text-center">
+                <p class="main-title-home">TASK EDIT</p>
+                <p class="about-game">редактирование задачи</p>
+            </div>
+            <form action="{% url 'task_detail' task.pk %}" method="POST">
+                {% csrf_token%}
+                <div class="row justify-content-center text-center">
+                    <div class="col-5 form-check-input-without-block text-center">
+                        <label class="descript-label" for="task_text">тема задачи:</label>
+                        <input type="text" value="{{ task.task_text }}" name="task_text" class="form-control id="task_text" placeholder="введите тему задачу">
+                        <label class="descript-label" for="deadline">дедлайн:</label>
+                        <input name="deadline" type="date" value="{{ task.deadline | date:'Y-m-d'}}"  class="form-control id="deadline">
+                    </div>
+
+                    <div class="col-5 form-check-input-without-block text-center">
+                        <label class="descript-label" for="task_description">подробное описание:</label>
+                        <textarea class="form-control" name="task_description" id="task_description" rows="5">{{ task.task_description }}</textarea>
+                    </div>
+                </div>
+
+                <div class="row text justify-content-center">
+                    <div class="col-4 text-center pt-10">
+                        <p class="descript">состояние задачи</p>
+                    </div>
+                </div>
+
+                <div class="row text justify-content-center">
+                {% for choice in CHOICES %}
+                    {% if choice.0 == task.state %}
+
+                       <div class="col-2">
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="state" value={{choice.0}} id="state" checked>
+                              <label class="form-check-label" for="state">{{choice.1}}</label>
+                           </div>
+                       </div>
+
+                    {% else %}
+
+                       <div class="col-2">
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="state" value={{choice.0}} id="state">
+                              <label class="form-check-label" for="state">{{choice.1}}</label>
+                           </div>
+                       </div>
+
+                    {% endif %}
+               {% endfor %}
+                </div>
+                <div class="row justify-content-center text-center">
+                    <div class="col-4 text-center">
+                        <button type="submit" class="btn btn-secondary btn-block">Изменить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block title %}
+    Task: {{ task.task_text }}
+{% endblock %}
+{% block menu %}
+    <a href="{% url 'task_add' %}">Создать задачу</a>
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="box">
+
+            <div class="head_text heading text-center">
+                <p class="main-title-home">TASK</p>
+                <p class="about-game">информация о задаче</p>
+            </div>
+
+            <div class="row justify-content-center text-center">
+                <div class="col-3 info-block text-center">
+                    <span class="descript">Задача:</span>
+                </div>
+                <div class="col-7 info-block text-center">
+                    <span class="info-head">{{ task.task_text }}</span>
+                </div>
+            </div>
+
+            <div class="row justify-content-center text-center">
+                <div class="col-3 info-block text-center">
+                    <span class="descript">Состояние: </span>
+                </div>
+                {% for choice in CHOICES %}
+                    {% if task.state == choice.0 %}
+                        <div class="col-7 info-block text-center">
+                            <div>
+                                <span class="info-head">{{ choice.1 }}</span>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+            <div class="row justify-content-center text-center">
+                <div class="col-3 info-block text-center">
+                    <span class="descript">Дедлайн: </span>
+                </div>
+                <div class="col-7 info-block text-center">
+                    <span class="info-head">{{ task.deadline |date:'Y-m-d' }}</span>
+                </div>
+            </div>
+
+            <div class="row justify-content-center text-center">
+                <div class="col-3 info-block text-center">
+                    <span class="descript">Описание: </span>
+                </div>
+                <div class="col-7 info-block text-center">
+
+                    <span class="text-break">{{ task.task_description | linebreaks }}</span>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center text-center">
+
+                <div class="col-4 text-center">
+                    <a href="{% url 'index'%}"><button type="submit" class="btn btn-outline-secondary"><i class="fa fa-home"></i></button></a>
+                </div>
+
+                <div class="col-3 text-center">
+                    <a href="{% url 'delete_confirmation' task.pk %}"><button type="submit" class="btn btn-secondary btn-block">Удалить</button></a>
+                </div>
+
+                <div class="col-4 text-center">
+                    <a href="{% url 'task_edit' task.pk %}"><button type="submit" class="btn btn-secondary btn-block">Редактировать</button></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block menu %}
+<li>
+    <a href="{% url 'task_add' %}">Создать задачу</a>
+</li>
+{% endblock %}
+
+{% block content %}
+     <div class="box">
+
+            <div class="head_text heading text-center">
+                <p class="main-title-home">TO DO LIST</p>
+                <p class="about-game">это приложение для учёта текущих задач</p>
+            </div>
+
+            <div class="row justify-content-center text-center">
+                <div class="col-5 info-block text-center">
+                    <div>
+                        <span class="descript">Задача</span>
+                    </div>
+                </div>
+                <div class="col-2 info-block text-center">
+                    <div>
+                        <span class="descript">Состояние</span>
+                    </div>
+                </div>
+                <div class="col-2 info-block">
+                    <div>
+                        <span class="descript">Дата</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                {% for task in tasks %}
+                        <div class="col-5 info-block-link text-center">
+                            <a class="link" href="{% url 'task_detail' task.pk %}"><span class="info-item">{{ task.task_text }}</span></a>
+                        </div>
+                        {% for choice in CHOICES %}
+                            {% if task.state == choice.0 %}
+                                <div class="col-2 info-block text-center">
+                                    <div>
+                                        <span class="info-item">{{ choice.1 }}</span>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                        <div class="col-2 info-block text-center">
+                            <div>
+                                <span class="info-item">{{ task.deadline |date:'Y-m-d' }}</span>
+                            </div>
+                        </div>
+                {% endfor %}
+            </div>
+           <form action="{% url 'task_add' %}" method="GET">
+                <div class="row justify-content-center">
+                    <div class="col-10 text-center">
+                        <button type="submit" class="btn btn-secondary btn-block">Создать задачу</button>
+                    </div>
+                </div>
+           </form>
+        </div>
+{% endblock %}
